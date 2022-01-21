@@ -4,6 +4,7 @@
 <head>
     <title>Project 3</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <!--end head-->
 
@@ -37,7 +38,7 @@
         <input type="email" name="user_email" id="user_email"> </br>
 
         <label for="user_phone">Phone Number</label> </br>
-        <input type="text" name="user_phone" id="user_phone"> </br>
+        <input type="telephone" name="user_phone" id="user_phone"> </br>
 
         <label for="user_address">Street Address</label> </br>
         <input type="text" name="user_address" id="user_address"> </br>
@@ -51,13 +52,11 @@
         <label for="user_zip">Zip Code</label> </br>
         <input type="text" name="user_zip" id="user_zip"> </br>
 
-    </form>
     <!--end contact info-->
     <h3>
         Newsletter
     </h3>
     <!--newsletter-->
-    <form>
         <label>Select the newsletters you would
             like to recieve
         </label> </br>
@@ -81,11 +80,13 @@
             Newsletter format
         </label> </br>
         <!--option list-->
-        <input type="radio" name="user_html" id="user_html">
+        <label >
+        <input type="radio" name="options" id="user_html">
         <label for="user_html">HTML</label> </br>
 
-        <input type="radio" name="user_plain" id="user_plain">
+        <input type="radio" name="options" id="user_plain">
         <label for="user_plain">Plain Text</label> </br>
+       </label>
         <!--end option list-->
         <label>
             Other Topics you'd like to hear about
