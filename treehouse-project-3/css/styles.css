@@ -2,11 +2,7 @@
     text-align: center;
     box-sizing: border-box;
 }
-header > body {
-    width: auto;
-    padding: 0;
-}
-h1 {
+h1 { /* reminder: go back to step 5 before coninuing!*/
     background-color: #2c3944;
     color: white;
     margin: 0 auto;
