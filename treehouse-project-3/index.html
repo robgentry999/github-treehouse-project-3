@@ -27,7 +27,7 @@
     <h2>
         Signup for our newsletter
     </h2> 
-    <p>
+    <p id="bottom_signup">
         Get the latest news on how your code is doing
         right in your inbox
     </p>
@@ -45,26 +45,25 @@
         </h3>
        </legend>
 
-        <label for="full_name">Full Name</label> </br>
-        <input type="text" name="full_name" id="full_name" placeholder="required"> </br>
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="required">
 
-        <label for="user_email">Email Address</label> </br>
-        <input type="email" name="user_email" id="user_email" placeholder="required"> </br>
+        <label for="user_email">Email Address</label> 
+        <input type="email" name="user_email" id="user_email" placeholder="required"> 
 
-        <label for="user_phone">Phone Number</label> </br>
-        <input type="telephone" name="user_phone" id="user_phone"> </br>
+        <label for="user_phone">Phone Number</label>
+        <input type="telephone" name="user_phone" id="user_phone"> 
 
-        <label for="user_address">Street Address</label> </br>
-        <input type="text" name="user_address" id="user_address"> </br>
+        <label for="user_address">Street Address</label> 
+        <input type="text" name="user_address" id="user_address">
 
-        <label for="user_city">City</label> </br>
-        <input type="text" name="user_city" id="user_city"> </br>
+        <label for="user_city">City</label> 
+        <input type="text" name="user_city" id="user_city">
        
        <!--select menu-->
-        <label for="user_state">State</label> </br> 
+        <label for="user_state" id="state">State</label>
 
-        <select name="user_state" id="state>  
-         <option name="cali" value="cali"> Cali</option> <!--broken first line??-->
+        <select name="user_state" id="state">  
          <option value="alabama"> Alabama</option>
          <option value="alaska"> Alaska</option>
          <option value="arizona"> Arizona</option>
@@ -117,11 +116,13 @@
          <option value="wyoming"> Wyoming</option>
 
         
-       </select> </br>
+       </select> 
 
+       <div>
+        <label for="user_zip" id="zip_code">Zip Code </br> </label> 
+        <input type="text" name="user_zip" id="user_zip">
+        </div>
 
-        <label for="user_zip">Zip Code</label> </br>
-        <input type="text" name="user_zip" id="user_zip"> </br>
      </fieldset>
         <!--end contact info-->
         <hr>
@@ -129,6 +130,7 @@
        <legend>
         <h3>
         Newsletter
+      <div id="newsletter_content">
         </h3>
       </legend>
         <!--newsletter-->
@@ -137,17 +139,17 @@
         </label> </br>
         <!--checkbox-->
         <input type="checkbox" name="checkbox" value="html_news" id="html_news">
-        <label for="html_news">
+        <label for="html_news" id="html_label">
             Html News
         </label> </br>
 
-        <input type="checkbox" name="checkbox" value="css_news id="css_news">
-        <label for="css_news">
+        <input type="checkbox" name="checkbox" value="css_news" id="css_news">
+        <label for="css_news" id="css_label">
             CSS News
         </label> </br>
 
         <input type="checkbox" name="checkbox" id="javascript_news">
-        <label for="javascript_news">
+        <label for="javascript_news" id="javascript_label">
             Javascript News
         </label> </br>
         <!--end checkbox-->
@@ -157,10 +159,10 @@
         <!--option list-->
         <label >
         <input type="radio" name="options" id="user_html">
-        <label for="user_html">HTML</label> </br>
+        <label for="user_html" id="html_button">HTML</label> </br>
 
         <input type="radio" name="options" id="user_plain">
-        <label for="user_plain">Plain Text</label> </br>
+        <label for="user_plain" id="plain_button">Plain Text</label> </br>
        </label>
         <!--end option list-->
         <label>
@@ -169,9 +171,10 @@
         <textarea name="other_topics" id="textarea"></textarea> </br>
 
         <button type="submit">Sign Up</button>
-        <p>Copyright The Code Review</p>
+        <p id="copyright"><em>Copyright The Code Review</em></p>
     </fieldset>
     </form>
+   </div>
     <!--end newsletter-->
 </body>
 
