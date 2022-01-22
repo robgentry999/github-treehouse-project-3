@@ -64,6 +64,7 @@
         <label for="user_state" id="state">State</label>
 
         <select name="user_state" id="state">  
+         <option value="none" selected disabled hidden>Choose State</option>   
          <option value="alabama"> Alabama</option>
          <option value="alaska"> Alaska</option>
          <option value="arizona"> Arizona</option>
@@ -138,6 +139,7 @@
             like to recieve
         </label> </br>
         <!--checkbox-->
+       <div id="checkbox_items">
         <input type="checkbox" name="checkbox" value="html_news" id="html_news">
         <label for="html_news" id="html_label">
             Html News
@@ -152,24 +154,27 @@
         <label for="javascript_news" id="javascript_label">
             Javascript News
         </label> </br>
+        </div>
         <!--end checkbox-->
         <label id="newsletter_format">
             Newsletter format
         </label> </br>
         <!--option list-->
-        <label >
+        <div id="newsletter_buttons">
         <input type="radio" name="options" id="user_html">
         <label for="user_html" id="html_button">HTML</label> </br>
 
         <input type="radio" name="options" id="user_plain">
         <label for="user_plain" id="plain_button">Plain Text</label> </br>
-       </label>
+       
+        </div>
         <!--end option list-->
         <label>
             Other Topics you'd like to hear about
         </label> </br>
+        <div id="user_textarea">
         <textarea name="other_topics" id="textarea"></textarea> </br>
-
+        </div>
         <button type="submit">Sign Up</button>
         <p id="copyright"><em>Copyright The Code Review</em></p>
     </fieldset>

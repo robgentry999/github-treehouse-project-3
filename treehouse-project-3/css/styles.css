@@ -27,6 +27,7 @@ h1 { /* reminder: go back to step 5 before coninuing!*/
     padding-right: 10px;
     font-style: italic;
     font-size: 70%;
+    justify-self: center;
 }
 button[type="submit"] {
  background-color: teal;
@@ -69,6 +70,9 @@ fieldset {
 textarea {
     width: 100%;
     height: 100px;
+    border: none;
+    border-radius: 7px;
+    background-color: #e8eeef;
 }
 hr {
     color:black
@@ -93,4 +97,10 @@ hr {
 #newsletters_recieve,
 #newsletter_format {
     padding: 7px auto;
+}
+#checkbox_items,
+#newsletter_buttons,
+#user_textarea {
+    margin-top: 7px;
+    margin-bottom:7px;
 }
