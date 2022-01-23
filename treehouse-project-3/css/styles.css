@@ -104,3 +104,44 @@ hr {
     margin-top: 7px;
     margin-bottom:7px;
 }
+
+
+@media screen and (min-width:768px) {
+    input[id="user_zip"] {
+        width: 25%;
+    }
+    .cinfo
+    { display: flex;
+      flex-direction: row;
+      align-items: center
+    }
+    .cinfo label{ 
+    flex-basis: 16%;
+    }
+
+    .cinfo input,
+    .cinfo select { 
+    flex-basis: 84%;
+    }
+
+    .zip_div {
+     display: flex;
+     align-items: left;
+     }
+     #zip_code {
+         margin-left: 0;
+         margin-right: 0;
+     }
+     #user_zip {
+         margin-left: 0;
+     }
+    .zip_div input { 
+    max-width: 25%;
+    }
+
+    button {
+    padding: 1rem;
+    }
+
+  }
+
