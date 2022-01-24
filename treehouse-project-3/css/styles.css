@@ -61,6 +61,15 @@ input[type="radio"] {
  margin: 10px 2px;
 }
 
+.thick-line {
+    border-bottom: #2c3944 solid 4px;
+    margin: auto 12px;
+}
+.thin-line {
+    border-bottom: #2c3944 solid 2px;
+    margin: 3px 12px;
+}
+
 input[id="user_zip"] {
     width: 50%;
 }
@@ -107,15 +116,20 @@ hr {
 
 
 @media screen and (min-width:768px) {
+    #main_content {
+        max-width: 900px;
+        margin: auto;
+    }
+    
     input[id="user_zip"] {
         width: 25%;
     }
-    .cinfo
-    { display: flex;
-      flex-direction: row;
-      align-items: center
+    .cinfo { 
+    display: flex;
+    flex-direction: row;
+    align-items: center
     }
-    .cinfo label{ 
+    .cinfo label { 
     flex-basis: 16%;
     }
 
@@ -128,13 +142,16 @@ hr {
      display: flex;
      align-items: left;
      }
+
      #zip_code {
          margin-left: 0;
          margin-right: 0;
      }
+
      #user_zip {
          margin-left: 0;
      }
+
     .zip_div input { 
     max-width: 25%;
     }
@@ -142,6 +159,5 @@ hr {
     button {
     padding: 1rem;
     }
-
   }
 
