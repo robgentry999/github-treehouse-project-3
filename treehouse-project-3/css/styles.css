@@ -115,12 +115,52 @@ hr {
 }
 
 
-@media screen and (min-width:768px) {
-    #main_content {
+@media screen and (min-width:768px) { 
+body{
+max-width: 780px;
+justify-content: center;
+}
+.cinfo { 
+ display: flex;
+flex-direction: row;
+align-items: center
+ }
+.cinfo label { 
+ flex-basis: 16%;
+ }
+        
+.cinfo input,
+.cinfo select { 
+flex-basis: 84%;
+}
+.zip_div input { 
+ max-width: 25%;
+ }
+ #zip_code {
+margin-left: 0;
+margin-right: 0;
+}
+#user_zip {
+    margin-left: 0;
+}
+ button {
+padding: 1rem;
+}
+
+}
+   
+   
+   /* #main_content {
         max-width: 900px;
         margin: auto;
     }
-    
+    input[id="full_name"],
+    input[id="user_email"],
+    input[id="user_phone"],
+    input[id="user_address"] {
+        max-width: 600px;
+        align-self: center;
+    }
     input[id="user_zip"] {
         width: 25%;
     }
