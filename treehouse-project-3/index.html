@@ -38,7 +38,7 @@
                 <p class="thin-line"></p>
           </div>
         <!--end sign up-->
-
+       <form>
         <!--contact info-->
         <fieldset>
             <legend>
@@ -57,7 +57,7 @@
             </div>
             <div class="input_div cinfo">
                 <label for="user_phone">Phone Number</label>
-                <input type="text" name="user_phone" id="user_phone">
+                <input type="tel" name="user_phone" id="user_phone">
             </div>
             <div class="input_div cinfo">
                 <label for="user_address">Street Address</label>
@@ -129,8 +129,13 @@
                 </select>
             </div>
             <div class="zip_div cinfo">
-                <label for="user_zip" id="zip_code">Zip Code </br> </label>
+               <div class="zip1">
+                <label for="user_zip" id="zip_code">Zip Code</label>
+                </div>
+
+                <div class="zip2">
                 <input type="text" name="user_zip" id="user_zip">
+                </div>
             </div>
 
         </fieldset>
@@ -143,45 +148,54 @@
                 </h3>
             </legend>
             <!--newsletter-->
+
             <label id="newsletters_recieve">Select the newsletters you would
-                like to recieve
-            </label> </br>
+                like to receive
+            </label>
             <!--checkbox-->
             <div id="checkbox_items">
+              <div class="checkbox_item1">
                 <input type="checkbox" name="checkbox" value="html_news" id="html_news">
                 <label for="html_news" id="html_label">
-                    Html News
-                </label> </br>
-
+                    HTML News 
+                </label> 
+             </div>
+             <div class="checkbox_item2">
                 <input type="checkbox" name="checkbox" value="css_news" id="css_news">
                 <label for="css_news" id="css_label">
                     CSS News
-                </label> </br>
-
+                </label>
+            </div>
+            <div class="checkbox_item3">
                 <input type="checkbox" name="checkbox" id="javascript_news">
                 <label for="javascript_news" id="javascript_label">
                     Javascript News
-                </label> </br>
-            
+                </label>
+            </div>
             </div>
             <!--end checkbox-->
             <label id="newsletter_format">
                 Newsletter format
-            </label> </br>
+            </label>
             <!--option list-->
             <div id="newsletter_buttons">
+                <div class="button_1">
                 <input type="radio" name="options" id="user_html">
-                <label for="user_html" id="html_button">HTML</label> </br>
+                <label for="user_html" id="html_button">HTML</label>
+                </div>
 
+                <div class="button_2"> 
                 <input type="radio" name="options" id="user_plain">
-                <label for="user_plain" id="plain_button">Plain Text</label> </br>
+                <label for="user_plain" id="plain_button">Plain Text</label>
+                </form>
+                </div>
             </div>
             <!--end option list-->
-            <label>
+            <label for="textarea">
                 Other Topics you'd like to hear about
-            </label> </br>
+            </label>
             <div id="user_textarea">
-                <textarea name="other_topics" id="textarea"></textarea> </br>
+                <textarea name="other_topics" id="textarea"></textarea>
             </div>
             <button type="submit">Sign Up</button>
             <p id="copyright"><em>Copyright The Code Review</em></p>

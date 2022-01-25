@@ -3,10 +3,16 @@
     font-family: 'Outfit', sans-serif;
 
 }
-body:focus {
- background-color: darkgrey;
+.input_div:focus {
+  background-color: darkmagenta;
+  border-color: darkred;
+}
+
+#main_content {
+    display: block;
 }
 h1 { /* reminder: go back to step 5 before coninuing!*/
+    margin-top: 0;
     background-color: #2c3944;
     color: white;
     margin: 0 auto;
@@ -20,6 +26,10 @@ h1 { /* reminder: go back to step 5 before coninuing!*/
     padding-left: 15px;
     padding-right: 15px;
 
+}
+.zip1,
+.zip2 {
+    display: block;
 }
 #intro-info {
  text-align: center;
@@ -46,7 +56,7 @@ button[type="submit"] {
 select,
 input[type="text"],
 input[type="email"],
-input[type="telephone"]{
+input[type="tel"]{
   margin: 10px auto;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -114,6 +124,11 @@ hr {
     margin-top: 7px;
     margin-bottom:7px;
 }
+.checkbox_item1,
+.checkbox_item2,
+.checkbox_item3 {
+    display: block;
+}
 
 
 @media screen and (min-width:768px) { 
@@ -132,20 +147,20 @@ align-items: center
 .cinfo label { 
  flex-basis: 16%;
  }
-        
+ .zip1,
+ .zip2 {
+     display: flex;
+ } 
+ .zip2 {
+    margin-left: 60px;
+ }     
 .cinfo input,
 .cinfo select { 
 flex-basis: 84%;
 }
-.zip_div input { 
- max-width: 25%;
- }
  #zip_code {
 margin-left: 0;
 margin-right: 0;
-}
-#user_zip {
-    margin-left: 0;
 }
  button {
 padding: 1rem;
