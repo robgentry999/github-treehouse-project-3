@@ -12,6 +12,7 @@ h1 { /* reminder: go back to step 5 before coninuing!*/
     font-size: 20px;
 }
 .sign-up {
+    justify-content: center;
     font-size: 75%;
     padding-left: 15px;
     padding-right: 15px;
@@ -50,7 +51,7 @@ input[type="telephone"]{
   background-color: #e8eeef;
   border-radius: 5px;
 }
-#state {
+#user_state {
      margin: 7px auto;
 }
 #zip_code {
@@ -118,7 +119,10 @@ hr {
 @media screen and (min-width:768px) { 
 body{
 max-width: 780px;
-justify-content: center;
+justify-self: center;
+}
+#main_content {
+    max-width: 900px;
 }
 .cinfo { 
  display: flex;
@@ -148,6 +152,12 @@ padding: 1rem;
 }
 
 }
+@media screen and (min-width:1080px) {
+    #main_content {
+        margin: auto auto auto 25%;
+    }
+}
+
    
    
    /* #main_content {
