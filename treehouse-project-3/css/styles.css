@@ -27,10 +27,6 @@ h1 { /* reminder: go back to step 5 before coninuing!*/
     padding-right: 15px;
 
 }
-.zip1,
-.zip2 {
-    display: block;
-}
 #intro-info {
  text-align: center;
 }
@@ -147,13 +143,10 @@ align-items: center
 .cinfo label { 
  flex-basis: 16%;
  }
- .zip1,
- .zip2 {
-     display: flex;
- } 
- .zip2 {
-    margin-left: 60px;
- }     
+ #user_zip {
+    flex-basis: 25%;
+    margin-left: 0;
+}
 .cinfo input,
 .cinfo select { 
 flex-basis: 84%;
